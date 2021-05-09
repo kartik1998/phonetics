@@ -4,15 +4,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const soundex_1 = __importDefault(require("./phonetics/soundex"));
+const metaphone_1 = __importDefault(require("./phonetics/metaphone"));
 class Phonetics {
     constructor() { }
     static soundex(text) {
         return this.soundexObj.getPhoneticString(text);
     }
+    static metaphone(text) {
+        return this.metaphoneObj.getPhoneticString(text);
+    }
     static soundexMatch(text1, text2) {
         return this.soundexObj.isPhoneticMatch(text1, text2);
     }
+    static metaphoneMatch(text1, text2) {
+        return this.metaphoneObj.isPhoneticMatch(text1, text2);
+    }
 }
-exports.default = Phonetics;
 Phonetics.soundexObj = new soundex_1.default();
-console.log(Phonetics.soundex('livelife'));
+Phonetics.metaphoneObj = new metaphone_1.default();
+module.exports = Phonetics;
