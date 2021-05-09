@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/kartik1998/phonetics/issues"
   },
-  "homepage": "https://github.com/kartik1998/phonetics#readme"
+  "homepage": "https://github.com/kartik1998/phonetics#readme",
+  "devDependencies": {
+    "@types/node": "^15.0.2"
+  }
 }
