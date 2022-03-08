@@ -6,7 +6,7 @@ class Phonetics {
   private static soundexObj = new Soundex();
   private static metaphoneObj = new Metaphone();
   private static doubleMetaphoneObj = new DoubleMetaphone();
-  public constructor() { }
+  private constructor() { }
 
   public static soundex(text: string): string {
     return this.soundexObj.getPhoneticString(text);
@@ -33,5 +33,4 @@ class Phonetics {
   }
 }
 
-const phonetics = new Phonetics();
-export default phonetics;
+export default Phonetics;
