@@ -5,8 +5,9 @@
   "main": "build/index.js",
   "scripts": {
     "start": "node build/index.js",
-    "compile": "tsc -p tsconfig.json",
-    "build": "npm run compile && npm run start"
+    "prepublishOnly": "npm run build",
+    "watch": "tsc -w -p tsconfig.json",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
