@@ -2,7 +2,7 @@ import Soundex from './phonetics/soundex';
 import Metaphone from './phonetics/metaphone';
 import DoubleMetaphone from './phonetics/double-metaphone';
 
-class Phonetics {
+export class Phonetics {
   private static soundexObj = new Soundex();
   private static metaphoneObj = new Metaphone();
   private static doubleMetaphoneObj = new DoubleMetaphone();
@@ -32,5 +32,3 @@ class Phonetics {
     return this.doubleMetaphoneObj.isPhoneticMatch(text1, text2);
   }
 }
-
-export default Phonetics;
