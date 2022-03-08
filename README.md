@@ -9,6 +9,7 @@
 
 ```javascript
 const Phonetics = require('phonetics');
+// or import * as Phonetics from 'phonetics'
 console.log(Phonetics.soundex('phonetic'));
 ```
 
