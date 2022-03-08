@@ -1,6 +1,6 @@
 {
   "name": "phonetics",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A nodejs library for phonetic string matching which exposes implementation of phonetic algorithms like soundex, metaphone and double-metaphone algorithms.",
   "types": "build/index.d.ts",
   "files": [
